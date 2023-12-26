@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="first.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="projet">
+            
+        <div class="titre">
+            <h2>first project</h2>
+            <h4>product managment system</h4>
+        </div>
+        
+        <div class="entre"></div>
+            <input type="text" id="title" placeholder="title">
+            <div class="prices">
+                <input onkeyup="somme()" type="number" id="prix" placeholder="prix">
+                <input onkeyup="somme()" type="number" id="tax" placeholder="tax">
+                <input onkeyup="somme()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="somme()" type="number" id="promo" placeholder="promo">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="cont" placeholder="contité">
+            <input type="text" id="type" id="type" placeholder="type">
+            <button id="creat">Creat</button>
+        <div class="sortie">
+            <div class="searching">
+                <input type="text" placeholder="search" id="search">
+            </div>
+            <div class="searching2">
+                <button id="searchtitle">search by title</button>
+                <button id="searchtype">search by type</button>
+            </div>
+            <div id="delall">
+                <button onclick="deleteall()" id="">delet all</button>
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>tax</th>
+                    <th>ads</th>
+                    <th>promo</th>
+                    <th>total</th>
+                    <th>contité</th>
+                    <th>type</th>
+                    <th>save</th>
+                    <th>delet</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    
+     </div>
+    <script src="first.js"></script>
+</body>
+</html>
